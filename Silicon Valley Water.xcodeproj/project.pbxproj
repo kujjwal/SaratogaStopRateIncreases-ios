@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C8AD6AC210811580016BEDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AD6AB210811580016BEDA /* AppDelegate.swift */; };
+		0C8AD6AE210811580016BEDA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AD6AD210811580016BEDA /* FirstViewController.swift */; };
+		0C8AD6B0210811580016BEDA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AD6AF210811580016BEDA /* SecondViewController.swift */; };
+		0C8AD6B3210811580016BEDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8AD6B1210811580016BEDA /* Main.storyboard */; };
+		0C8AD6B52108115A0016BEDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C8AD6B42108115A0016BEDA /* Assets.xcassets */; };
+		0C8AD6B82108115A0016BEDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8AD6B62108115A0016BEDA /* LaunchScreen.storyboard */; };
+		0C8AD6C32108115A0016BEDA /* Silicon_Valley_WaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AD6C22108115A0016BEDA /* Silicon_Valley_WaterTests.swift */; };
+		0C8AD6CE2108115A0016BEDA /* Silicon_Valley_WaterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AD6CD2108115A0016BEDA /* Silicon_Valley_WaterUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C8AD6BF2108115A0016BEDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C8AD6A0210811580016BEDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C8AD6A7210811580016BEDA;
+			remoteInfo = "Silicon Valley Water";
+		};
+		0C8AD6CA2108115A0016BEDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C8AD6A0210811580016BEDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C8AD6A7210811580016BEDA;
+			remoteInfo = "Silicon Valley Water";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C8AD6A8210811580016BEDA /* Silicon Valley Water.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Silicon Valley Water.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C8AD6AB210811580016BEDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0C8AD6AD210811580016BEDA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		0C8AD6AF210811580016BEDA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		0C8AD6B2210811580016BEDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C8AD6B42108115A0016BEDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C8AD6B72108115A0016BEDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C8AD6B92108115A0016BEDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C8AD6BE2108115A0016BEDA /* Silicon Valley WaterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Silicon Valley WaterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C8AD6C22108115A0016BEDA /* Silicon_Valley_WaterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Silicon_Valley_WaterTests.swift; sourceTree = "<group>"; };
+		0C8AD6C42108115A0016BEDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C8AD6C92108115A0016BEDA /* Silicon Valley WaterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Silicon Valley WaterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C8AD6CD2108115A0016BEDA /* Silicon_Valley_WaterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Silicon_Valley_WaterUITests.swift; sourceTree = "<group>"; };
+		0C8AD6CF2108115A0016BEDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C8AD6A5210811580016BEDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C8AD6BB2108115A0016BEDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C8AD6C62108115A0016BEDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C8AD69F210811580016BEDA = {
+			isa = PBXGroup;
+			children = (
+				0C8AD6AA210811580016BEDA /* Silicon Valley Water */,
+				0C8AD6C12108115A0016BEDA /* Silicon Valley WaterTests */,
+				0C8AD6CC2108115A0016BEDA /* Silicon Valley WaterUITests */,
+				0C8AD6A9210811580016BEDA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0C8AD6A9210811580016BEDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C8AD6A8210811580016BEDA /* Silicon Valley Water.app */,
+				0C8AD6BE2108115A0016BEDA /* Silicon Valley WaterTests.xctest */,
+				0C8AD6C92108115A0016BEDA /* Silicon Valley WaterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C8AD6AA210811580016BEDA /* Silicon Valley Water */ = {
+			isa = PBXGroup;
+			children = (
+				0C8AD6AB210811580016BEDA /* AppDelegate.swift */,
+				0C8AD6AD210811580016BEDA /* FirstViewController.swift */,
+				0C8AD6AF210811580016BEDA /* SecondViewController.swift */,
+				0C8AD6B1210811580016BEDA /* Main.storyboard */,
+				0C8AD6B42108115A0016BEDA /* Assets.xcassets */,
+				0C8AD6B62108115A0016BEDA /* LaunchScreen.storyboard */,
+				0C8AD6B92108115A0016BEDA /* Info.plist */,
+			);
+			path = "Silicon Valley Water";
+			sourceTree = "<group>";
+		};
+		0C8AD6C12108115A0016BEDA /* Silicon Valley WaterTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C8AD6C22108115A0016BEDA /* Silicon_Valley_WaterTests.swift */,
+				0C8AD6C42108115A0016BEDA /* Info.plist */,
+			);
+			path = "Silicon Valley WaterTests";
+			sourceTree = "<group>";
+		};
+		0C8AD6CC2108115A0016BEDA /* Silicon Valley WaterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0C8AD6CD2108115A0016BEDA /* Silicon_Valley_WaterUITests.swift */,
+				0C8AD6CF2108115A0016BEDA /* Info.plist */,
+			);
+			path = "Silicon Valley WaterUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C8AD6A7210811580016BEDA /* Silicon Valley Water */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C8AD6D22108115A0016BEDA /* Build configuration list for PBXNativeTarget "Silicon Valley Water" */;
+			buildPhases = (
+				0C8AD6A4210811580016BEDA /* Sources */,
+				0C8AD6A5210811580016BEDA /* Frameworks */,
+				0C8AD6A6210811580016BEDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Silicon Valley Water";
+			productName = "Silicon Valley Water";
+			productReference = 0C8AD6A8210811580016BEDA /* Silicon Valley Water.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0C8AD6BD2108115A0016BEDA /* Silicon Valley WaterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C8AD6D52108115A0016BEDA /* Build configuration list for PBXNativeTarget "Silicon Valley WaterTests" */;
+			buildPhases = (
+				0C8AD6BA2108115A0016BEDA /* Sources */,
+				0C8AD6BB2108115A0016BEDA /* Frameworks */,
+				0C8AD6BC2108115A0016BEDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C8AD6C02108115A0016BEDA /* PBXTargetDependency */,
+			);
+			name = "Silicon Valley WaterTests";
+			productName = "Silicon Valley WaterTests";
+			productReference = 0C8AD6BE2108115A0016BEDA /* Silicon Valley WaterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0C8AD6C82108115A0016BEDA /* Silicon Valley WaterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C8AD6D82108115A0016BEDA /* Build configuration list for PBXNativeTarget "Silicon Valley WaterUITests" */;
+			buildPhases = (
+				0C8AD6C52108115A0016BEDA /* Sources */,
+				0C8AD6C62108115A0016BEDA /* Frameworks */,
+				0C8AD6C72108115A0016BEDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C8AD6CB2108115A0016BEDA /* PBXTargetDependency */,
+			);
+			name = "Silicon Valley WaterUITests";
+			productName = "Silicon Valley WaterUITests";
+			productReference = 0C8AD6C92108115A0016BEDA /* Silicon Valley WaterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C8AD6A0210811580016BEDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Ujjwal Krishnamurthi";
+				TargetAttributes = {
+					0C8AD6A7210811580016BEDA = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					0C8AD6BD2108115A0016BEDA = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 0C8AD6A7210811580016BEDA;
+					};
+					0C8AD6C82108115A0016BEDA = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 0C8AD6A7210811580016BEDA;
+					};
+				};
+			};
+			buildConfigurationList = 0C8AD6A3210811580016BEDA /* Build configuration list for PBXProject "Silicon Valley Water" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C8AD69F210811580016BEDA;
+			productRefGroup = 0C8AD6A9210811580016BEDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C8AD6A7210811580016BEDA /* Silicon Valley Water */,
+				0C8AD6BD2108115A0016BEDA /* Silicon Valley WaterTests */,
+				0C8AD6C82108115A0016BEDA /* Silicon Valley WaterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C8AD6A6210811580016BEDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C8AD6B82108115A0016BEDA /* LaunchScreen.storyboard in Resources */,
+				0C8AD6B52108115A0016BEDA /* Assets.xcassets in Resources */,
+				0C8AD6B3210811580016BEDA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C8AD6BC2108115A0016BEDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C8AD6C72108115A0016BEDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C8AD6A4210811580016BEDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C8AD6B0210811580016BEDA /* SecondViewController.swift in Sources */,
+				0C8AD6AC210811580016BEDA /* AppDelegate.swift in Sources */,
+				0C8AD6AE210811580016BEDA /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C8AD6BA2108115A0016BEDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C8AD6C32108115A0016BEDA /* Silicon_Valley_WaterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C8AD6C52108115A0016BEDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C8AD6CE2108115A0016BEDA /* Silicon_Valley_WaterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C8AD6C02108115A0016BEDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C8AD6A7210811580016BEDA /* Silicon Valley Water */;
+			targetProxy = 0C8AD6BF2108115A0016BEDA /* PBXContainerItemProxy */;
+		};
+		0C8AD6CB2108115A0016BEDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C8AD6A7210811580016BEDA /* Silicon Valley Water */;
+			targetProxy = 0C8AD6CA2108115A0016BEDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0C8AD6B1210811580016BEDA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C8AD6B2210811580016BEDA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0C8AD6B62108115A0016BEDA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C8AD6B72108115A0016BEDA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C8AD6D02108115A0016BEDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0C8AD6D12108115A0016BEDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C8AD6D32108115A0016BEDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z25776QDY;
+				INFOPLIST_FILE = "Silicon Valley Water/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "KrishnamurthiLabs.Silicon-Valley-Water";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C8AD6D42108115A0016BEDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z25776QDY;
+				INFOPLIST_FILE = "Silicon Valley Water/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "KrishnamurthiLabs.Silicon-Valley-Water";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0C8AD6D62108115A0016BEDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z25776QDY;
+				INFOPLIST_FILE = "Silicon Valley WaterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "KrishnamurthiLabs.Silicon-Valley-WaterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Silicon Valley Water.app/Silicon Valley Water";
+			};
+			name = Debug;
+		};
+		0C8AD6D72108115A0016BEDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z25776QDY;
+				INFOPLIST_FILE = "Silicon Valley WaterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "KrishnamurthiLabs.Silicon-Valley-WaterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Silicon Valley Water.app/Silicon Valley Water";
+			};
+			name = Release;
+		};
+		0C8AD6D92108115A0016BEDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z25776QDY;
+				INFOPLIST_FILE = "Silicon Valley WaterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "KrishnamurthiLabs.Silicon-Valley-WaterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Silicon Valley Water";
+			};
+			name = Debug;
+		};
+		0C8AD6DA2108115A0016BEDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z25776QDY;
+				INFOPLIST_FILE = "Silicon Valley WaterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "KrishnamurthiLabs.Silicon-Valley-WaterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Silicon Valley Water";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C8AD6A3210811580016BEDA /* Build configuration list for PBXProject "Silicon Valley Water" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C8AD6D02108115A0016BEDA /* Debug */,
+				0C8AD6D12108115A0016BEDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C8AD6D22108115A0016BEDA /* Build configuration list for PBXNativeTarget "Silicon Valley Water" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C8AD6D32108115A0016BEDA /* Debug */,
+				0C8AD6D42108115A0016BEDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C8AD6D52108115A0016BEDA /* Build configuration list for PBXNativeTarget "Silicon Valley WaterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C8AD6D62108115A0016BEDA /* Debug */,
+				0C8AD6D72108115A0016BEDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C8AD6D82108115A0016BEDA /* Build configuration list for PBXNativeTarget "Silicon Valley WaterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C8AD6D92108115A0016BEDA /* Debug */,
+				0C8AD6DA2108115A0016BEDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C8AD6A0210811580016BEDA /* Project object */;
+}
