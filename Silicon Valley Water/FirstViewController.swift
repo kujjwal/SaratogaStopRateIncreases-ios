@@ -32,6 +32,13 @@ class FirstViewController: UIViewController, MFMailComposeViewControllerDelegate
         send_email.titleLabel?.textAlignment = .center;
         send_email.layer.cornerRadius = 25;
         
+        send_email.layer.borderWidth = 2.0
+        send_email.layer.borderColor = UIColor.clear.cgColor
+        send_email.layer.shadowColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.5).cgColor
+        send_email.layer.shadowOpacity = 1.0
+        send_email.layer.shadowRadius = 1.0
+        send_email.layer.shadowOffset = CGSize(width: -2.5, height: 2.5)
+        
         name.delegate = self;
         email.delegate = self;
         address.delegate = self;
