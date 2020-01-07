@@ -12,12 +12,9 @@
 		0C8AD6B0210811580016BEDA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AD6AF210811580016BEDA /* SecondViewController.swift */; };
 		0C8AD6B3210811580016BEDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8AD6B1210811580016BEDA /* Main.storyboard */; };
 		0C8AD6B52108115A0016BEDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C8AD6B42108115A0016BEDA /* Assets.xcassets */; };
-		0C8AD6C32108115A0016BEDA /* Silicon_Valley_WaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AD6C22108115A0016BEDA /* Silicon_Valley_WaterTests.swift */; };
-		0C8AD6CE2108115A0016BEDA /* Silicon_Valley_WaterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AD6CD2108115A0016BEDA /* Silicon_Valley_WaterUITests.swift */; };
 		0C8AD6DC210812470016BEDA /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AD6DB210812470016BEDA /* ThirdViewController.swift */; };
 		0C8AD6E22110F9890016BEDA /* NewScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C8AD6E02110F9890016BEDA /* NewScreen.storyboard */; };
 		0CDE3C402113839A007CC028 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDE3C3F2113839A007CC028 /* FourthViewController.swift */; };
-		0CDE3C422113844A007CC028 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDE3C412113844A007CC028 /* Downloader.swift */; };
 		0CDE3C4421138DC3007CC028 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDE3C4321138DC3007CC028 /* FifthViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,15 +44,10 @@
 		0C8AD6B42108115A0016BEDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C8AD6B92108115A0016BEDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C8AD6BE2108115A0016BEDA /* Silicon Valley WaterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Silicon Valley WaterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C8AD6C22108115A0016BEDA /* Silicon_Valley_WaterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Silicon_Valley_WaterTests.swift; sourceTree = "<group>"; };
-		0C8AD6C42108115A0016BEDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C8AD6C92108115A0016BEDA /* Silicon Valley WaterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Silicon Valley WaterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C8AD6CD2108115A0016BEDA /* Silicon_Valley_WaterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Silicon_Valley_WaterUITests.swift; sourceTree = "<group>"; };
-		0C8AD6CF2108115A0016BEDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C8AD6DB210812470016BEDA /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		0C8AD6E12110F9890016BEDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Silicon Valley Water/Base.lproj/NewScreen.storyboard"; sourceTree = "<group>"; };
 		0CDE3C3F2113839A007CC028 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
-		0CDE3C412113844A007CC028 /* Downloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
 		0CDE3C4321138DC3007CC028 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,8 +81,6 @@
 			children = (
 				0C8AD6E02110F9890016BEDA /* NewScreen.storyboard */,
 				0C8AD6AA210811580016BEDA /* Silicon Valley Water */,
-				0C8AD6C12108115A0016BEDA /* Silicon Valley WaterTests */,
-				0C8AD6CC2108115A0016BEDA /* Silicon Valley WaterUITests */,
 				0C8AD6A9210811580016BEDA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,28 +106,9 @@
 				0C8AD6B92108115A0016BEDA /* Info.plist */,
 				0C8AD6DB210812470016BEDA /* ThirdViewController.swift */,
 				0CDE3C3F2113839A007CC028 /* FourthViewController.swift */,
-				0CDE3C412113844A007CC028 /* Downloader.swift */,
 				0CDE3C4321138DC3007CC028 /* FifthViewController.swift */,
 			);
 			path = "Silicon Valley Water";
-			sourceTree = "<group>";
-		};
-		0C8AD6C12108115A0016BEDA /* Silicon Valley WaterTests */ = {
-			isa = PBXGroup;
-			children = (
-				0C8AD6C22108115A0016BEDA /* Silicon_Valley_WaterTests.swift */,
-				0C8AD6C42108115A0016BEDA /* Info.plist */,
-			);
-			path = "Silicon Valley WaterTests";
-			sourceTree = "<group>";
-		};
-		0C8AD6CC2108115A0016BEDA /* Silicon Valley WaterUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0C8AD6CD2108115A0016BEDA /* Silicon_Valley_WaterUITests.swift */,
-				0C8AD6CF2108115A0016BEDA /* Info.plist */,
-			);
-			path = "Silicon Valley WaterUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +244,6 @@
 			files = (
 				0C8AD6B0210811580016BEDA /* SecondViewController.swift in Sources */,
 				0C8AD6AC210811580016BEDA /* AppDelegate.swift in Sources */,
-				0CDE3C422113844A007CC028 /* Downloader.swift in Sources */,
 				0C8AD6DC210812470016BEDA /* ThirdViewController.swift in Sources */,
 				0C8AD6AE210811580016BEDA /* FirstViewController.swift in Sources */,
 				0CDE3C402113839A007CC028 /* FourthViewController.swift in Sources */,
@@ -285,7 +255,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C8AD6C32108115A0016BEDA /* Silicon_Valley_WaterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C8AD6CE2108115A0016BEDA /* Silicon_Valley_WaterUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,15 +418,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3Z25776QDY;
+				DEVELOPMENT_TEAM = NUBD76TJB5;
 				INFOPLIST_FILE = "Silicon Valley Water/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "KrishnamurthiLabs.Silicon-Valley-Water";
+				PRODUCT_BUNDLE_IDENTIFIER = "KrishnamurthiLab.Silicon-Valley-Water";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -468,15 +438,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3Z25776QDY;
+				DEVELOPMENT_TEAM = NUBD76TJB5;
 				INFOPLIST_FILE = "Silicon Valley Water/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "KrishnamurthiLabs.Silicon-Valley-Water";
+				PRODUCT_BUNDLE_IDENTIFIER = "KrishnamurthiLab.Silicon-Valley-Water";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

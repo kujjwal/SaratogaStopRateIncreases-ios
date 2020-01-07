@@ -17,7 +17,6 @@ class FirstViewController: UIViewController, MFMailComposeViewControllerDelegate
     @IBOutlet weak var address: UITextField!
     @IBOutlet weak var send_email: UIButton!
     
-    var details_str: String = "";
     var summary_str: String = "";
     var success_str: String = "";
     var email_send_str: String = "";
@@ -62,19 +61,24 @@ class FirstViewController: UIViewController, MFMailComposeViewControllerDelegate
             let data = try? Data(contentsOf: url!);
             let total: String = String(data: data!, encoding: String.Encoding.utf8)!;
             
-            self.success_str = total[self.indexOf(total: total, search: "SUCCESS") + 7..<self.indexOf(total: total, search: "DETAILS TO COPY, PASTE")].trim();
-            self.email_send_str = total[self.indexOf(total: total, search: "Dear PUC")..<self.indexOf(total: total, search: "cumulative rate changes.") + 24] + "\n" + total[self.indexOf(total: total, search: "AL 510: WE WANT MORE")..<self.indexOf(total: total, search: "gouging of the consumer.") + 24] + "\n" + total[self.indexOf(total: total, search: "In my opinion, SJWC")..<self.indexOf(total: total, search: "END EMAIL")].trim();
+            self.summary_str = total[self.indexOf(total: total, search: "SUMMARY") + 7 ..< self.indexOf(total: total, search: "SUCCESS")].trim();
+            self.success_str = total[self.indexOf(total: total, search: "SUCCESS") + 7 ..< self.indexOf(total: total, search: "COPY EVERYTHING BELOW THIS LINE")].trim();
+            self.to_str = total[self.indexOf(total: total, search: "EMAIL: ") + 6 ..< self.indexOf(total: total, search: "CC: ")].trim();
+            self.cc_str = total[self.indexOf(total: total, search: "CC: ") + 3 ..< self.indexOf(total: total, search: "SUBJECT: ")].trim();
+            self.subject_str = total[self.indexOf(total: total, search: "SUBJECT: ") + 8 ..< self.indexOf(total: total, search: "Dear PUC President")].trim();
+            self.email_send_str = total[self.indexOf(total: total, search: "Dear PUC President") ..< self.indexOf(total: total, search: "END EMAIL")].trim();
             
-            self.details_str = self.email_send_str[0..<self.indexOf(total: self.email_send_str, search: "Sincerely,")].trim();
-            self.summary_str = total[self.indexOf(total: total, search: "SUMMARY") + 18..<self.indexOf(total: total, search: "SUCCESS")].trim();
+            /*self.email_send_str = total[self.indexOf(total: total, search: "Dear PUC President")..<self.indexOf(total: total, search: "adding to their bottomline.") + 27] + "\n" + total[self.indexOf(total: total, search: "Our community is not happy")..<self.indexOf(total: total, search: "to many in our community.") + 25] + "\n" + total[self.indexOf(total: total, search: "Appendix 1 What")..<self.indexOf(total: total, search: "Are they good community partners?") + 33] + total[self.indexOf(total: total, search: "Appendix 2 COMMENTS")..<self.indexOf(total: total, search: "reframing before it’s published!") + 32].trim();
+            self.email_send_str = total.trim();
             
-            self.to_str = total[self.indexOf(total: total, search: "EMAIL:") + 6..<self.indexOf(total: total, search: "CC:")].trim();
-            self.cc_str = total[self.indexOf(total: total, search: "CC:") + 3..<self.indexOf(total: total, search: "SUBJECT:")].trim();
-            self.subject_str = total[self.indexOf(total: total, search: "SUBJECT:")..<self.indexOf(total: total, search: "Dear PUC President Picker and Commissioners,")].trim();
+            self.details_str = self.email_send_str.trim();
+            self.to_str = total[self.indexOf(total: total, search: "Email:") + 6..<self.indexOf(total: total, search: "cc:")].trim();
+            self.cc_str = total[self.indexOf(total: total, search: "cc:") + 3..<self.indexOf(total: total, search: "SUBJECT:")].trim();
+            self.subject_str = total[self.indexOf(total: total, search: "SUBJECT:")..<self.indexOf(total: total, search: "Dear PUC President Picker and Commissioners,")].trim();*/
             
             let second = self.tabBarController?.viewControllers![1] as! SecondViewController;
             second.summary_str = self.summary_str;
-            second.details_str = self.details_str;
+            second.details_str = self.email_send_str[self.indexOf(total: self.email_send_str, search: "Dear PUC President") ..< self.indexOf(total: self.email_send_str, search: "Sincerely,")];
             
             self.completed = true;
         }
@@ -107,8 +111,7 @@ class FirstViewController: UIViewController, MFMailComposeViewControllerDelegate
                 let cc_arr: [String] = cc_str.components(separatedBy: ",");
                 self.email_send_str = self.email_send_str.replacingOccurrences(of: "Your Name", with: self.name.text!);
                 self.email_send_str = self.email_send_str.replacingOccurrences(of: "Address", with: self.address.text!);
-                let text_f: String = details_str + "\n\nRegards,\n" + name.text! + "\n" + email.text! + "\n" + address.text! + "\n";
-                self.sendEmailTo(to: to_arr, cc: cc_arr, bcc: [email.text!], subject: subject_str, text: text_f);
+                self.sendEmailTo(to: to_arr, cc: cc_arr, subject: subject_str, text: self.email_send_str);
             }
         }
     }
@@ -117,23 +120,21 @@ class FirstViewController: UIViewController, MFMailComposeViewControllerDelegate
         if(!b) {
             self.textAlert(title: "Email", msg: "Fill In Email Field Correctly.");
         } else {
-            self.sendEmailTo(to: ["rkumar@saratoga.ca.us"], bcc: [email.text!], subject: "Saratoga Water App FAQ", text: "Question: ");
+            self.sendEmailTo(to: ["rkumar@saratoga.ca.us"], subject: "Saratoga Water App FAQ", text: "Question: ");
         }
     }
     
-    func sendEmailTo(to: [String], cc: [String]? = nil, bcc: [String], subject: String, text: String) -> Void {
+    func sendEmailTo(to: [String], cc: [String]? = nil, subject: String, text: String) -> Void {
         let no_cc: Bool = cc == nil || cc!.count == 0;
         
         let composeVC = MFMailComposeViewController();
         composeVC.mailComposeDelegate = self;
         composeVC.setToRecipients(to);
-        composeVC.setBccRecipients(bcc);
         if(!no_cc) {
             composeVC.setCcRecipients(cc);
         }
         composeVC.setSubject(subject);
         composeVC.setMessageBody(text, isHTML: false);
-        
         self.present(composeVC, animated: true, completion: nil);
     }
     
@@ -145,9 +146,15 @@ class FirstViewController: UIViewController, MFMailComposeViewControllerDelegate
     }
     
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        controller.dismiss(animated: true, completion: {
-            self.success_alert();
-        });
+        switch result.rawValue {
+            case MFMailComposeResult.sent.rawValue:
+                self.dismiss(animated: true) {self.success_alert()}
+                break
+            case MFMailComposeResult.failed.rawValue:
+                print("Mail sent failure: %@", [error?.localizedDescription])
+            default:
+                self.dismiss(animated: true, completion: nil)
+        }
     }
     
     func textAlert(title: String, msg: String) {
